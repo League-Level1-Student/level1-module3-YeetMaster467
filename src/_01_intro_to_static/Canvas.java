@@ -58,11 +58,12 @@ public class Canvas {
     public void addCircle(Circle circle) {
         circles.add(circle);
         
-        System.out.println("circle radius = " + Circle.radius);
-        System.out.println("circle color = " + Circle.color);
+       
         
         // Must place after adding new circle
         // no size - 1 to number starting from 1
+        
+        
         final int num = circles.size();
         
         JSlider colorSlider = new JSlider(SwingConstants.HORIZONTAL, 0, 255, 100);
